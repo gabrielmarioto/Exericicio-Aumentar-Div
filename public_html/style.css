@@ -1,0 +1,58 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 04/03/2020, 12:30:44
+    Author     : Gabriel Marioto
+*/
+
+body
+{
+    text-align: center;
+    font-family: Arial;
+    font-weight: bold;
+}
+#conteudo
+{
+    width: 100%; height: 500px;
+    float:left;
+    overflow: hidden;
+    background-color: white;    
+}
+
+section
+{
+    display: flex;
+    justify-content: center;    
+    height: 100%;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+a
+{
+    opacity: 0
+}
+section > div
+{
+    width: 240px; height: 150px;
+    background-color: lightblue;
+    outline: 1px black solid;    
+    text-align: center; 
+    
+    
+}
+section > div:hover
+{
+    width: 350px; height: 150px;
+    background-color: lightyellow;
+    outline: 1px black solid;    
+    text-align: center;     
+    transition-duration: 0.5s;
+}
+section > div:hover > a
+{
+    opacity: 1;
+}
